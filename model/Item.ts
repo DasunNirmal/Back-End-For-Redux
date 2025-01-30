@@ -1,5 +1,5 @@
 export default class Item {
-    conde!: number;
+    code!: string;
     name!: string;
     quantity!: number;
 }
