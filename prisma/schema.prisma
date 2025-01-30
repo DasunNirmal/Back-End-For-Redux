@@ -18,3 +18,9 @@ model customer {
   email String @unique
   phone String
 }
+
+model item {
+  code     Int    @id
+  name     String
+  quantity Int
+}
