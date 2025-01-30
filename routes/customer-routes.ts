@@ -26,7 +26,7 @@ router.delete('/delete/:email', async(req, res) => {
     }
 });
 
-router.patch('/update/:email', async(req, res) => {
+router.put('/update/:email', async(req, res) => {
     const email = req.params.email;
     const customer: Customer = req.body;
     try {
@@ -38,7 +38,7 @@ router.patch('/update/:email', async(req, res) => {
     }
 });
 
-router.get('/get', async(req, res) => {
+router.get('/view', async(req, res) => {
     try {
         const customers = await getAllCustomers();
         res.send(customers);
