@@ -15,12 +15,12 @@ datasource db {
 
 model customer {
   name  String
-  email String @unique
+  email String @id
   phone String
 }
 
 model item {
-  code     Int    @id
+  code     String @id
   name     String
   quantity Int
 }
