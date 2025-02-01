@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.post('/add', async(req, res) => {
     const item: Item = req.body;
+    console.log(req.body)
     try {
         await addItems(item);
         res.send('Item Added');
