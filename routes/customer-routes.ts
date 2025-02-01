@@ -38,7 +38,7 @@ router.put('/update/:email', async(req, res) => {
     }
 });
 
-router.get('/view', async(req, res) => {
+router.get('/get', async(req, res) => {
     try {
         const customers = await getAllCustomers();
         res.send(customers);
