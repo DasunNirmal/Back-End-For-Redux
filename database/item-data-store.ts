@@ -8,8 +8,8 @@ export async function addItems(item: Item) {
         const newItem = await prisma.item.create({
             data: {
                 code: item.code,
-                name: item.name,
-                quantity: item.quantity
+                itemName: item.itemName,
+                qty: item.qty
             }
         });
         console.log('Item Added: ', newItem);
@@ -42,8 +42,8 @@ export async function updateItem(code: string, item: Item) {
             where: {code: code},
             data: {
                 code: item.code,
-                name: item.name,
-                quantity: item.quantity
+                itemName: item.itemName,
+                qty: item.qty
             }
         });
     } catch (e) {
