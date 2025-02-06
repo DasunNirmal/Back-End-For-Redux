@@ -21,6 +21,6 @@ model customer {
 
 model item {
   code     String @id
-  name     String
-  quantity Int
+  itemName String
+  qty      String
 }
